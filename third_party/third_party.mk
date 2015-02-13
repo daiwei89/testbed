@@ -6,14 +6,14 @@ third_party_core: path \
 	                gflags \
                   glog \
                   zeromq \
-                  boost \
                   gperftools \
 									cuckoo \
 									leveldb \
                   libconfig \
                   yaml-cpp \
                  leveldb \
-								 snappy
+								 snappy \
+                  boost
 
 third_party_all: third_party_core \
                  sparsehash \
@@ -144,7 +144,7 @@ $(CUCKOO_SRC):
 # =================== oprofile ===================
 # NOTE: need libpopt-dev binutils-dev
 
-OPROFILE_SRC = $(THIRD_PARTY_SRC)/oprofile-0.9.9.tar.gz
+OPROFILE_SRC = $(THIRD_PARTY_SRC)/oprofile-1.0.0.tar.gz
 OPROFILE_LIB = $(THIRD_PARTY_LIB)/oprofile
 
 oprofile: $(OPROFILE_LIB)

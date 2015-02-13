@@ -41,6 +41,7 @@ PETUUM_LDFLAGS = -Wl,-rpath,$(PETUUM_THIRD_PARTY_LIB) \
 	  -lyaml-cpp \
 	  -lleveldb
 
+
 # PETUUM_LDFLAGS += -lnuma
 PETUUM_LDFLAGS += -lsnappy
 
